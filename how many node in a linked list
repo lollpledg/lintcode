@@ -1,0 +1,16 @@
+public class Solution {
+    /**
+     * @param head: the first node of linked list.
+     * @return: An integer
+     */
+    public int countNodes(ListNode head) {
+        
+        if(head==null) return 0;
+        int i=1;
+        while(head.next!=null){
+            i++;
+            head=head.next;
+        }
+        return i;
+    }
+};
